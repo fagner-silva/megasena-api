@@ -17,3 +17,5 @@ jobs:
 
       - run: npm ci
       - run: node -c src/server.js
+        env:
+          MONGO_URI: ${{ secrets.MONGO_URI }}
